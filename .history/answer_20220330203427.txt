@@ -1,0 +1,6 @@
+In the recursive program, the solution to the base case is provided and the solution of 
+he bigger problem is expressed in terms of smaller problems. 
+
+Base case is a case or statement where recursion stop execution due to some condition. 
+General case is what keep recursion going. 
+
