@@ -53,6 +53,9 @@ do{
         }
         };
         break;
+        case 3:{
+            exit(0);
+        }
         break;
         case 4:{
             string del_el;
@@ -96,20 +99,6 @@ do{
             }
         };
         break;
-        case 6:{
-
-        };
-        break;
-
-        case 7:{
-
-        };  
-        break;
-
-
-        case 8:{
-            exit(0);
-        }
 
         default:cout<<"Input valid options"<<endl;
 

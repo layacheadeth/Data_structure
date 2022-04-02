@@ -4,11 +4,11 @@ using namespace std;
 void Menu(){
     cout<<"1. Create Order"<<endl;
     cout<<"2. Display Order"<<endl;
+    cout<<"3. Exit"<<endl;
     cout<<"4. Delete Order"<<endl;
     cout<<"5. Update Order"<<endl;
     cout<<"6. Search Order"<<endl;
     cout<<"7. Sort Order"<<endl;
-    cout<<"8. Exit"<<endl;
 };
 
 // void CreateOrder(string id, string food, int qty,double price){
@@ -45,7 +45,7 @@ do{
         break;
         case 2:{
             for(int i=0;i<n;i++){
-            // cout<<"Display Order"<<endl;
+            cout<<"Display Order"<<endl;
             cout<<"Id: "<<id[i]<<endl;
             cout<<"Name: "<<food[i]<<endl;
             cout<<"Qty: "<<qty[i]<<endl;
@@ -53,6 +53,9 @@ do{
         }
         };
         break;
+        case 3:{
+            exit(0);
+        }
         break;
         case 4:{
             string del_el;
@@ -96,20 +99,6 @@ do{
             }
         };
         break;
-        case 6:{
-
-        };
-        break;
-
-        case 7:{
-
-        };  
-        break;
-
-
-        case 8:{
-            exit(0);
-        }
 
         default:cout<<"Input valid options"<<endl;
 

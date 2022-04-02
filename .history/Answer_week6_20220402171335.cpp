@@ -96,17 +96,6 @@ do{
             }
         };
         break;
-        case 6:{
-
-        };
-        break;
-
-        case 7:{
-
-        };  
-        break;
-
-
         case 8:{
             exit(0);
         }
