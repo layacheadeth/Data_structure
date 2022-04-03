@@ -32,17 +32,6 @@ void BubbleSort(T arr[], int n){
     }
 }
 
-template<class T>
-int LinearSearch(T arr[],int n, T x){
-    for(int i=0;i<n;i++){
-        if(arr[i]==x){
-            return i;
-        }
-    }
-    return -1;
-}
-
-
 
 
 // void swap(string *xp,string *yp){
@@ -140,19 +129,6 @@ do{
         };
         break;
         case 6:{
-            string search;
-            int result;
-            cout<<"Search by ID: ";cin>>search;
-            result=LinearSearch(id,n,search);
-
-            if(result!=-1){
-                cout << search << " is present in the array at position " << result << endl;
-            }
-	        else
-		        cout << search << " is not present in the array \n" << endl;
-		
-            
-
 
         };
         break;
@@ -161,11 +137,6 @@ do{
             // bubbleSort(id,n);
             // bubbleSort(food,n);
             // bubbleSort(qty,n);
-            BubbleSort(id,n);
-            BubbleSort(food,n);
-            BubbleSort(qty,n);
-            BubbleSort(price,n);
-
 
 
         };  

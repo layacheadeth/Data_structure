@@ -19,48 +19,22 @@ void Menu(){
 
 // };
 
-template<typename T>
-void BubbleSort(T arr[], int n){
-    for(int i=0;i<n-1;i++){
-        for(int j=0;j<n-i-1;j++){
-            if(arr[j]>arr[j+1]){
-                T temp=arr[j+1];
-                arr[j+1]=arr[j];
-                arr[j]=temp;
+void swap(string *xp,string *yp){
+    string temp=*xp;
+    *xp=*yp;
+    *yp=temp;
+}
+
+void bubbleSort(string  arr[],int n){
+    int i,j;
+    for(i=0;i<n-1;i++){
+        for (j=0;j<n-i-1;j++){
+            if (arr[j] > arr[j+1]){
+                swap(&arr[j], &arr[j+1]);
             }
         }
     }
 }
-
-template<class T>
-int LinearSearch(T arr[],int n, T x){
-    for(int i=0;i<n;i++){
-        if(arr[i]==x){
-            return i;
-        }
-    }
-    return -1;
-}
-
-
-
-
-// void swap(string *xp,string *yp){
-//     string temp=*xp;
-//     *xp=*yp;
-//     *yp=temp;
-// }
-
-// void bubbleSort(string  arr[],int n){
-//     int i,j;
-//     for(i=0;i<n-1;i++){
-//         for (j=0;j<n-i-1;j++){
-//             if (arr[j] > arr[j+1]){
-//                 swap(&arr[j], &arr[j+1]);
-//             }
-//         }
-//     }
-// }
 
 
 
@@ -140,32 +114,11 @@ do{
         };
         break;
         case 6:{
-            string search;
-            int result;
-            cout<<"Search by ID: ";cin>>search;
-            result=LinearSearch(id,n,search);
-
-            if(result!=-1){
-                cout << search << " is present in the array at position " << result << endl;
-            }
-	        else
-		        cout << search << " is not present in the array \n" << endl;
-		
-            
-
 
         };
         break;
 
         case 7:{
-            // bubbleSort(id,n);
-            // bubbleSort(food,n);
-            // bubbleSort(qty,n);
-            BubbleSort(id,n);
-            BubbleSort(food,n);
-            BubbleSort(qty,n);
-            BubbleSort(price,n);
-
 
 
         };  

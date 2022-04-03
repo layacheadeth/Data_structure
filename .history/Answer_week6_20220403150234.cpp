@@ -141,12 +141,12 @@ do{
         break;
         case 6:{
             string search;
-            int result;
+            string result;
             cout<<"Search by ID: ";cin>>search;
             result=LinearSearch(id,n,search);
 
             if(result!=-1){
-                cout << search << " is present in the array at position " << result << endl;
+                cout << search << " is present in the array at position " << index << endl;
             }
 	        else
 		        cout << search << " is not present in the array \n" << endl;
