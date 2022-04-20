@@ -10,13 +10,14 @@ class Shape{
 private: 
     int width,height;
 public:
+    int width,height;
 
     int getWidth(){
-        return this->width;
+        return width;
     }
 
     int getHeight(){
-        return this->height;
+        return height;
     }
 
     void setWidth(int w){
@@ -119,7 +120,6 @@ int main(){
 
     
     cout<<r1.calculateArea()<<endl;
-    cout<<t1.calculateArea()<<endl;
 
     d1.display();
     

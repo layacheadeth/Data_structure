@@ -119,7 +119,6 @@ int main(){
 
     
     cout<<r1.calculateArea()<<endl;
-    cout<<t1.calculateArea()<<endl;
 
     d1.display();
     

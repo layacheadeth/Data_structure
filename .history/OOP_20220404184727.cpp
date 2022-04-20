@@ -10,13 +10,14 @@ class Shape{
 private: 
     int width,height;
 public:
+    int width,height;
 
     int getWidth(){
-        return this->width;
+        return width;
     }
 
     int getHeight(){
-        return this->height;
+        return height;
     }
 
     void setWidth(int w){
@@ -111,15 +112,13 @@ int main(){
     Animal Zebra("Zebra",19);
     Animal Dolphin("Dolphin",20);
 
-    t1.setHeight(4);
-    t1.setWidth(10);
+    
 
-    r1.setHeight(2);
-    r1.setWidth(4);
+    r1.width=2;
+    r1.height=4;
 
     
     cout<<r1.calculateArea()<<endl;
-    cout<<t1.calculateArea()<<endl;
 
     d1.display();
     

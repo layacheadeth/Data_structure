@@ -10,21 +10,14 @@ class Shape{
 private: 
     int width,height;
 public:
+    int width,height;
 
     int getWidth(){
-        return this->width;
+        return width;
     }
 
     int getHeight(){
-        return this->height;
-    }
-
-    void setWidth(int w){
-        this->width=w;
-    }
-
-    void setHeight(int h){
-        this->height=h;
+        return height;
     }
 
     Shape(){
@@ -44,14 +37,14 @@ public:
 class Triangle: public Shape {
 public:
     int calculateArea(){
-        return getWidth()*getHeight()/2;
+        return width*height/2;
     }
 };
 
 class Rectangle: public Shape{
 public:
     int calculateArea(){
-        return getWidth()*getHeight();
+        return width*height;
 
     }
 
@@ -111,15 +104,14 @@ int main(){
     Animal Zebra("Zebra",19);
     Animal Dolphin("Dolphin",20);
 
-    t1.setHeight(4);
-    t1.setWidth(10);
+    t1.width=3;
+    t1.height=4;
 
-    r1.setHeight(2);
-    r1.setWidth(4);
+    r1.width=2;
+    r1.height=4;
 
-    
-    cout<<r1.calculateArea()<<endl;
     cout<<t1.calculateArea()<<endl;
+    cout<<r1.calculateArea()<<endl;
 
     d1.display();
     
