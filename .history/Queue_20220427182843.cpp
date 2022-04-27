@@ -7,7 +7,7 @@ class Queue {
   int front;
   int rear;
   int arr[5];
-
+  
     Queue() {
       front = -1;
       rear = -1;
